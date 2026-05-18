@@ -197,7 +197,7 @@ def process_pdf():
 
 @app.route('/')
 def index():
-    return send_file('pdfforge.html', mimetype='text/html')
+    return send_file('compiledocs.html', mimetype='text/html')
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=5000)
